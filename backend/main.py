@@ -20,7 +20,7 @@ class LoginRequest(BaseModel):
 
 @app.post("/api/auth/login")
 def login(req: LoginRequest):
-    if req.password == "12345":
+    if req.password == "Mclovinepato":
         return {"ok": True}
     raise HTTPException(status_code=401, detail="Senha incorreta")
 
